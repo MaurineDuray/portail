@@ -1,0 +1,69 @@
+{
+    "schools": [
+    {
+        "id": 1,
+        "name": "Epse",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    },{
+        "id": 2,
+        "name": "Test1",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    },{
+        "id": 3,
+        "name": "Test2",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    },{
+        "id": 4,
+        "name": "Test3",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    },{
+        "id": 5,
+        "name": "Test4",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    },{
+        "id": 6,
+        "name": "Test5",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    },{
+        "id": 7,
+        "name": "Test6",
+        "addresse": "Rue du village, 50 - 7850 Marcq",
+        "telephone": "+32 23 95 60 23",
+        "mail": "info@epse.be",
+        "description": "Venez vous immerger dans le quotidien de nos étudiant-es Inscription obligatoire via info@epse.be",
+        "site": "https://www.epse.be"
+
+    }
+
+]
+}
