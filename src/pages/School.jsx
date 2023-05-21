@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import React,{useState, useEffect} from 'react';
 import SchoolData from "../components/SchoolData";
 
 const School = ({school}) => {

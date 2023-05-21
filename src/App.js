@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import React,{useState,useEffect} from 'react';
-import Schools from "./data.json";
+import data from "./data.json";
 
 function App() {
  
@@ -38,7 +38,7 @@ function App() {
         <div className="wrapper">
           <h2>Nos sociétés</h2>
           <div id="mysocietys">
-            {Schools.schools.map((item)=>(
+            {data.map((item)=>(
                <div className="cards">
                <img src="" alt="image" />
                <div className="infos">
@@ -47,7 +47,7 @@ function App() {
                  <p>Téléphone : {item.telephone}</p>
                  <p>Mail: {item.mail}</p>
                  <p>Site Web : <a href={item.site} target="_blank" rel="noopener noreferrer">{item.site}</a></p>
-                 <Link key={item.id} to={"school/"+item.name} className="button"> En savoir plus</Link>
+                 <Link key={item.id} to={"http://localhost:3000/school/"+item.name} className="button"> En savoir plus</Link>
                </div>
              </div>
             ))}

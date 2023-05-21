@@ -1,28 +1,33 @@
 import React,{useEffect, useState} from 'react';
-
+import data from '../data.json';
 
 const SchoolData = () => {
-    const [school, setSchool] = useState();
-
+    const [school, setSchool] = useState(null);
+  
     useEffect(() => {
-        const fetchData = async () => {
-            try{
-                const response = await fetch('../data.json');
-                const data = await response.json();
-                setSchool(data);
-            }catch(error){
-                console.log('Une erreur s\'est produite')
-            }
-        };
-
-        fetchData();
+        // créer une fonction pour récupérer les données de l'école en analysant l'url
+      const getSchoolInformation = () => {
+        const currentURL = window.location.href;
+        const schoolName = decodeURI(currentURL.substring(currentURL.lastIndexOf('/') + 1));
+        const foundSchool = data.find((item) => item.name === schoolName);
+        console.log('école='+currentURL)
+        console.log('école='+schoolName)
+        console.log('école='+foundSchool)
+  
+        if (foundSchool) {
+          setSchool(foundSchool);
+        } else {
+          console.log("École non trouvée !");
+        }
+      };
+  
+      getSchoolInformation();
     }, []);
-
-    if(!school){
-        return <div>Chargement en cours...</div>
-    }
-    return ( 
-        <>
+  
+    return (
+        <div>
+        {school ? (
+            <>
             <div className="card">
                 Logo
             </div>
@@ -35,7 +40,18 @@ const SchoolData = () => {
                 <p>Site Web: {school.site}</p>
             </div>
         </>
-     );
-}
+            
+        ) : (
+            <>
+            <p>Il n'existe pas (ou plus) d'école à ce nom </p>
+            </>
+            
+        )}
+          
+        </div>
+      
+    );
+  };
  
 export default SchoolData ;
+
